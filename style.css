@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700;800;900&family=Permanent+Marker&family=Zeyada&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./images/bg.jpeg");
+    background-size: 1000px;
+    background-position: center center;
+}
+
+.paper{
+    padding: 20px 100px;
+    background: url('./images/paper.webp');
+    background-size: 500px;
+    box-shadow: 1px 10px 20px 0 rgba(0,0,0,.4);
+    background-position: center center;
+    position: absolute;
+    transform: rotateZ(-5deg);
+}
+.paper.heart{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url('./images/heart.webp');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.paper.heart p {
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+}
+.paper.heart::after{
+    content: '';
+    /* background-image: url('./images/heart.webp'); */
+    background-image: url('./images/moon.jpg');
+    width: 100%;
+    height: 100%;
+    /* background-size: 150px; */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.paper.image{
+    padding: 10px;
+}
+.paper.image p{
+    font-size: 30px;
+}
+img{
+    max-height: 200px;
+    width: 100%;
+    user-select: none;
+}
+p {
+    font-size: 50px;
+    padding: 10px 20px;
+    color: rgb(0, 0, 100);
+    font-family: 'zeyada';
+    font-weight: 600;
+    user-select: none;
+}
